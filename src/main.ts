@@ -2,6 +2,6 @@ import { validateSepolia, processBlock } from "./helper.js";
 
 await validateSepolia();
 
-for (let i = 11823653n; i < 11823656; i += 1n) {
-  await processBlock(i);
+for (let blockNumber = 11823653n; blockNumber <= 11823655n; blockNumber += 1n) {
+  await processBlock(blockNumber);
 }
